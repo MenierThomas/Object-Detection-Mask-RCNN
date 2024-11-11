@@ -7,6 +7,17 @@ Ce projet vise à détecter des sneakers dans des images en utilisant le modèle
 
 L'évaluation des performances du modèle est réalisée à l'aide d'une matrice de confusion et de graphiques représentant les pertes d'entraînement et de validation.
 
+## Requirements 
+
+Repris de la page github : https://github.com/ahmedfgad/Mask-RCNN-TF2/tree/master
+Testé avec un environnement Python 3.7.3, TensorFlow 2.0.0, Keras 2.2.4-tf et les paquets présents dans requirements.txt
+Autre dépendances requise non présente dans le requirement.txt : 
+- pandas
+- seaborn
+- scikit-learn
+
+Comme nous n'avons pas réussi à uploader les mask sur github, ils sont disponibles au lien suivant : https://drive.google.com/drive/folders/1EjuueQ5BcQGQNoFnCuvKvUucLQTclE8A
+
 ## Annotations 
 
 Nous avons annotés un total de 390 images avec l'outils VIA 2.0.12, 300 images pour le training (250 images contenant des sneakers et 50 n'en contenant pas), 60 images pour la validation (50 vraies, 10 fausses) et 30 pour les tests (25 vraies, 5 fausses). 
