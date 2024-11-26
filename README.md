@@ -19,9 +19,10 @@ Cette approche permet de configurer rapidement un environnement compatible avec 
 - `seaborn`  
 - `scikit-learn`  
 
-Pour installer les dépendances, utilisez le fichier `requirements.txt` fourni dans le dépôt. Ajoutez manuellement les paquets supplémentaires mentionnés ci-dessus si nécessaire :  
+Pour installer les dépendances :
 ```bash
 pip install seaborn scikit-learn
+```
 
 Les masks d'entraînement sont trop volumineux pour github, ils sont donc disponibles au lien suivant : https://drive.google.com/drive/folders/1EjuueQ5BcQGQNoFnCuvKvUucLQTclE8A
 
@@ -40,7 +41,8 @@ Le modèle a été entraîné avec le jeu d'hyperparamètres suivant :
 | **Backbone**                       | ResNet-101                     |
 | **Optimizer**                      | SGD                            |
 | **Taux d'apprentissage (lr)**  | 0.001                              |
-| **Epochs**              | 250                                      |
+| **Steps**              | 250                                      |
+| **Epochs**              | 5                                      |
 | **Taux de Dropout**        | 0.9                                   |
 | **Initialisation des Poids** | mask_rcnn_coco.h5                     |
 | **Etapes de validation**               | 50                                        |
@@ -79,7 +81,7 @@ Résumé de la matrice de confusion :
    
 2. **Réduire les faux positifs (FP) :**
    - **Ajuster le taux d'apprentissage (learning rate)** peut permettre au modèle d'optimiser plus précisément les poids. Un taux d'apprentissage plus faible pourrait aider à mieux converger sans faire de prédictions trop extrêmes.
-   - **Améliorer l'architecture du modèle**, par exemple en ajustant les couches du **backbone** (par exemple, passer de ResNet-50 à ResNet-101 ou utiliser un autre réseau de neurones pré-entraîné avec une meilleure capacité à détecter des objets).
+   - **Améliorer l'architecture du modèle**, par exemple en ajustant les couches du **backbone** (par exemple, passer de ResNet-101 à ResNet-50).
 
 3. **Réévaluation des hyperparamètres :**
    - **Taux de dropout** : Si la précision est faible en raison du sur-apprentissage (overfitting), augmenter le taux de dropout pourrait améliorer la généralisation du modèle.
