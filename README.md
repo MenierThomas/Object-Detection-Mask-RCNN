@@ -31,7 +31,7 @@ Le modèle a été entraîné avec le jeu d'hyperparamètres suivant :
 | Hyperparamètre          | Valeurs utilisées                         |
 |-------------------------|-------------------------------------------|
 | **Taux d'apprentissage (lr)**  | 0.001                              |
-| **Époques**              | 250                                      |
+| **Epochs**              | 250                                      |
 | **Taux de Dropout**        | 0.9                                   |
 | **Initialisation des Poids** | mask_rcnn_coco.h5                     |
 
