@@ -39,7 +39,7 @@ Le modèle a été entraîné avec le jeu d'hyperparamètres suivant :
 
 Le graphique ci-dessous représente la perte (loss) sur l’ensemble d’entraînement et l’ensemble de validation au cours des différentes époques d'entraînement. Ce graphique permet d’évaluer si le modèle présente des signes de surapprentissage (overfitting) ou de sous-apprentissage (underfitting).
 
-![Training and Validation Loss](assets/loss_graph.png)
+loss_graph
 
 Ici, on observe que la perte sur l'ensemble de validation est plus élevée que sur l'ensemble d'entraînement, indiquant que le modèle est en surapprentissage.
 
@@ -47,7 +47,7 @@ Ici, on observe que la perte sur l'ensemble de validation est plus élevée que 
 
 La matrice de confusion suivante illustre la performance du modèle sur l’ensemble de test. Elle permet d’évaluer la qualité de la classification en comparant les prédictions du modèle avec les vraies étiquettes des données.
 
-![Matrice de Confusion](assets/confusion_matrix.png)
+matrice de confusion
 
 Résumé de la matrice de confusion :
 - Faux Positifs (FP) : 18
